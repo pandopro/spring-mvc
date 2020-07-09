@@ -1,4 +1,4 @@
-package Model;
+package project.model;
 
 public class Car {
     private String number;
