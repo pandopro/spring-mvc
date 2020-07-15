@@ -14,9 +14,6 @@ public class CarController {
 
     @GetMapping(value = "/cars")
     public String printList(ModelMap model) {
-        carService.add(new Car("e123oo123", "renault", "logan"));
-        carService.add(new Car("e564aa23", "renault", "megan"));
-        carService.add(new Car("e123pc13", "renault", "koleos"));
         model.addAttribute("list", carService.getList());
         return "carList";
     }

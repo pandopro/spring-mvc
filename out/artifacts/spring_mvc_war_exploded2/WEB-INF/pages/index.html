@@ -6,6 +6,11 @@
     <title>welcome</title>
 </head>
 <body>
+<h1>
+    <a href="/cars?locale=ru">List of cars in Russian</a>
+    <br>
+    <a href="/cars?locale=en">List of cars in English</a></h1>
+<br>
 <div>
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
